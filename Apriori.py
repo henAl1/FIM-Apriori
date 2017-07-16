@@ -56,6 +56,6 @@ class Apriori(object):
 
 if __name__ == '__main__':
     T = [['A', 'C', 'D'], ['B', 'D'], ['A', 'B', 'C', 'E'], ['B', 'D']]  # list of list containing the transactions
-    min_support = 2
-    apriori = Apriori(T, 2)
+    min_support = 3
+    apriori = Apriori(T, min_support)
     apriori.display_results()
